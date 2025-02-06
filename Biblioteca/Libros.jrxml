@@ -54,6 +54,28 @@
 			</element>
 		</band>
 	</detail>
-	<pageFooter height="63" splitType="Stretch"/>
-	<summary height="50"/>
+	<pageFooter height="63" splitType="Stretch">
+		<element kind="textField" uuid="e99380ac-376f-4097-8cc7-0cba7e2c04e9" x="453" y="33" width="100" height="30" evaluationTime="Report" hTextAlign="Right" vTextAlign="Bottom">
+			<expression><![CDATA["Page " + $V{PAGE_NUMBER}+" of " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="052f2e2a-49ea-4a2d-9544-4b7a0bf1dcea" x="0" y="33" width="100" height="30" pattern="MMMMM dd, yyyy" vTextAlign="Bottom">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="303">
+		<element kind="chart" chartType="pie" uuid="9acb4c7c-3186-49a0-9e00-8787694d240d" x="120" y="10" width="330" height="280" evaluationTime="Report" linkTarget="Self">
+			<titleFont fontName="SansSerif" fontSize="16.0" bold="true"/>
+			<titleExpression><![CDATA["Ventas por libro"]]></titleExpression>
+			<dataset kind="pie">
+				<series>
+					<keyExpression><![CDATA[$F{titulo}]]></keyExpression>
+					<valueExpression><![CDATA[$F{ventas}]]></valueExpression>
+					<labelExpression><![CDATA[$F{titulo}+": "+$F{ventas}+" vendidos"]]></labelExpression>
+				</series>
+			</dataset>
+			<plot>
+				<itemLabel/>
+			</plot>
+		</element>
+	</summary>
 </jasperReport>
