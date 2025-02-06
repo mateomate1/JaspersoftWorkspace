@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_q8vmAd1VEe-_6OOHZ2XnTw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_q8vmAt1VEe-_6OOHZ2XnTw" bindingContexts="_q8vmC91VEe-_6OOHZ2XnTw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Blank_A4.jrxml&quot; tooltip=&quot;Biblioteca/Blank_A4.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/Blank_A4.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Libros.jrxml&quot; tooltip=&quot;Biblioteca/Libros.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/Libros.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Autor.jrxml&quot; tooltip=&quot;Biblioteca/Autor.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/Autor.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.data.DataAdapterEditorPart&quot; name=&quot;DataAdapter.jrdax&quot; tooltip=&quot;Biblioteca/DataAdapter.jrdax&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/DataAdapter.jrdax&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Libro.jrxml&quot; tooltip=&quot;MyReports/Libro.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MyReports/Libro.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Blank_A4.jrxml&quot; tooltip=&quot;MyReports/Blank_A4.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MyReports/Blank_A4.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Libros.jrxml&quot; tooltip=&quot;Biblioteca/Libros.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/Libros.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Blank_A4.jrxml&quot; tooltip=&quot;Biblioteca/Blank_A4.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/Blank_A4.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Autor.jrxml&quot; tooltip=&quot;Biblioteca/Autor.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/Autor.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.data.DataAdapterEditorPart&quot; name=&quot;DataAdapter.jrdax&quot; tooltip=&quot;Biblioteca/DataAdapter.jrdax&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Biblioteca/DataAdapter.jrdax&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Libro.jrxml&quot; tooltip=&quot;MyReports/Libro.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MyReports/Libro.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Blank_A4.jrxml&quot; tooltip=&quot;MyReports/Blank_A4.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MyReports/Blank_A4.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_q8vmAt1VEe-_6OOHZ2XnTw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_rQH1BN1VEe-_6OOHZ2XnTw" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
@@ -51,7 +51,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_rdBo4N1VEe-_6OOHZ2XnTw" containerData="3000" selectedElement="_rdBo491VEe-_6OOHZ2XnTw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_rdBo4N1VEe-_6OOHZ2XnTw" containerData="3000" selectedElement="_rdBo4d1VEe-_6OOHZ2XnTw">
                 <children xsi:type="basic:PartStack" xmi:id="_rdBo4d1VEe-_6OOHZ2XnTw" elementId="org.eclipse.gef.ui.palette_viewMStack" containerData="4000" selectedElement="_rdBo4t1VEe-_6OOHZ2XnTw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_rdBo4t1VEe-_6OOHZ2XnTw" elementId="org.eclipse.gef.ui.palette_view" ref="_rdBoz91VEe-_6OOHZ2XnTw" closeable="true">
                     <tags>View</tags>
@@ -114,35 +114,17 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_rdBokN1VEe-_6OOHZ2XnTw" elementId="org.eclipse.ui.editorss" selectedElement="_rdBokd1VEe-_6OOHZ2XnTw">
-      <children xsi:type="basic:PartStack" xmi:id="_rdBokd1VEe-_6OOHZ2XnTw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_BVZjcOLPEe-cGLXjKMsRxw">
+      <children xsi:type="basic:PartStack" xmi:id="_rdBokd1VEe-_6OOHZ2XnTw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_tTv8cORiEe-GTsMQ7aVzQA">
         <tags>EditorStack</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_iaa5EOIKEe-zXMq3W9a_JQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Libro.jrxml" iconURI="platform:/plugin/com.jaspersoft.studio/icons/jrxml_icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Libro.jrxml&quot; partName=&quot;Libro.jrxml&quot; title=&quot;Libro.jrxml&quot; tooltip=&quot;MyReports/Libro.jrxml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MyReports/Libro.jrxml&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.jaspersoft.studio.editor.JrxmlEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_vt7roOIMEe-zXMq3W9a_JQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DataAdapter.jrdax" iconURI="platform:/plugin/com.jaspersoft.studio/icons/data_source.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.jaspersoft.studio.data.DataAdapterEditorPart&quot; name=&quot;DataAdapter.jrdax&quot; partName=&quot;DataAdapter.jrdax&quot; title=&quot;DataAdapter.jrdax&quot; tooltip=&quot;Biblioteca/DataAdapter.jrdax&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Biblioteca/DataAdapter.jrdax&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.jaspersoft.studio.data.DataAdapterEditorPart</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_BVZjcOLPEe-cGLXjKMsRxw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Libros.jrxml" iconURI="platform:/plugin/com.jaspersoft.studio/icons/jrxml_icon.png" closeable="true">
+        <children xsi:type="basic:Part" xmi:id="_tTv8cORiEe-GTsMQ7aVzQA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Libros.jrxml" iconURI="platform:/plugin/com.jaspersoft.studio/icons/jrxml_icon.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Libros.jrxml&quot; partName=&quot;Libros.jrxml&quot; title=&quot;Libros.jrxml&quot; tooltip=&quot;Biblioteca/Libros.jrxml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Biblioteca/Libros.jrxml&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>com.jaspersoft.studio.editor.JrxmlEditor</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_wHF1oOLUEe-cGLXjKMsRxw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Blank_A4.jrxml" iconURI="platform:/plugin/com.jaspersoft.studio/icons/jrxml_icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Blank_A4.jrxml&quot; partName=&quot;Blank_A4.jrxml&quot; title=&quot;Blank_A4.jrxml&quot; tooltip=&quot;Biblioteca/Blank_A4.jrxml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Biblioteca/Blank_A4.jrxml&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.jaspersoft.studio.editor.JrxmlEditor</tags>
         </children>
       </children>
     </sharedElements>
@@ -237,7 +219,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rU4ZMt1VEe-_6OOHZ2XnTw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_-8vkwOOkEe-DBOJDVA14uA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_q-0rk91VEe-_6OOHZ2XnTw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_TZymwORgEe-GTsMQ7aVzQA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_q-0rk91VEe-_6OOHZ2XnTw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rU4ZM91VEe-_6OOHZ2XnTw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -255,7 +237,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rU4ZN91VEe-_6OOHZ2XnTw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_-8yBAOOkEe-DBOJDVA14uA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_q-0rFd1VEe-_6OOHZ2XnTw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_TZ1DAORgEe-GTsMQ7aVzQA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_q-0rFd1VEe-_6OOHZ2XnTw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1AVZYOIMEe-zXMq3W9a_JQ" elementId="com.jaspersoft.studio.graphic.text" visible="false">
         <tags>Draggable</tags>
@@ -1969,7 +1951,7 @@
   <addons xmi:id="_q8vmF91VEe-_6OOHZ2XnTw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_q8vmGN1VEe-_6OOHZ2XnTw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_q-X9sN1VEe-_6OOHZ2XnTw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_-yhRweOkEe-DBOJDVA14uA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <categories xmi:id="_q-0poN1VEe-_6OOHZ2XnTw" elementId="org.eclipse.team.ui.category.team" name="Version control (Team)" description="Actions that apply when working with a version control system"/>
   <categories xmi:id="_q-0pod1VEe-_6OOHZ2XnTw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_q-0pot1VEe-_6OOHZ2XnTw" elementId="org.eclipse.ui.category.edit" name="Edit"/>

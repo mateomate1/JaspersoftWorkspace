@@ -1,224 +1,59 @@
 <!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
-<jasperReport name="Libros" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="246cbc63-b885-46dd-96cf-2eb47758f0fa">
-	<property name="com.jaspersoft.studio.data.sql.tables" value="bGlicm8gLDE1LDE1LDQxNzVkNmU4LTE4N2YtNDE0My04NGNmLTdjZWFiNzZjYjlhMDthdXRvciAs&#xa;MTI0LDI4LDdiYWI5MTViLWNhYjItNDE3Yi1iMGZmLWFlODc3NjFkZmYzYjs="/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
-	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
-		<box>
-			<pen lineWidth="0.5" lineColor="#000000"/>
-			<topPen lineWidth="0.5" lineColor="#000000"/>
-			<leftPen lineWidth="0.5" lineColor="#000000"/>
-			<bottomPen lineWidth="0.5" lineColor="#000000"/>
-			<rightPen lineWidth="0.5" lineColor="#000000"/>
-		</box>
-	</style>
-	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
-		<box>
-			<pen lineWidth="0.5" lineColor="#000000"/>
-			<topPen lineWidth="0.5" lineColor="#000000"/>
-			<leftPen lineWidth="0.5" lineColor="#000000"/>
-			<bottomPen lineWidth="0.5" lineColor="#000000"/>
-			<rightPen lineWidth="0.5" lineColor="#000000"/>
-		</box>
-	</style>
-	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
-		<box>
-			<pen lineWidth="0.5" lineColor="#000000"/>
-			<topPen lineWidth="0.5" lineColor="#000000"/>
-			<leftPen lineWidth="0.5" lineColor="#000000"/>
-			<bottomPen lineWidth="0.5" lineColor="#000000"/>
-			<rightPen lineWidth="0.5" lineColor="#000000"/>
-		</box>
-	</style>
-	<style name="Table 1_TH" mode="Opaque" backcolor="#FFFFFF">
-		<box>
-			<pen lineWidth="0.5" lineColor="#000000"/>
-			<topPen lineWidth="0.5" lineColor="#000000"/>
-			<leftPen lineWidth="0.5" lineColor="#000000"/>
-			<bottomPen lineWidth="0.5" lineColor="#000000"/>
-			<rightPen lineWidth="0.5" lineColor="#000000"/>
-		</box>
-	</style>
-	<style name="Table 1_CH" mode="Opaque" backcolor="#747879">
-		<box>
-			<pen lineWidth="0.5" lineColor="#000000"/>
-			<topPen lineWidth="0.5" lineColor="#000000"/>
-			<leftPen lineWidth="0.5" lineColor="#000000"/>
-			<bottomPen lineWidth="0.5" lineColor="#000000"/>
-			<rightPen lineWidth="0.5" lineColor="#000000"/>
-		</box>
-	</style>
-	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
-		<box>
-			<pen lineWidth="0.5" lineColor="#000000"/>
-			<topPen lineWidth="0.5" lineColor="#000000"/>
-			<leftPen lineWidth="0.5" lineColor="#000000"/>
-			<bottomPen lineWidth="0.5" lineColor="#000000"/>
-			<rightPen lineWidth="0.5" lineColor="#000000"/>
-		</box>
-	</style>
-	<dataset name="Ordenacion" uuid="c268e1b8-686d-4aa1-b746-d0db779164d0">
-		<property name="com.jaspersoft.studio.data.sql.tables" value="bGlicm8gLDE1LDE1LDhiMjI5OWZhLWYzODktNGRkYy1hMTQzLTIwOGVjMmE0MzE5ZTthdXRvciAs&#xa;MTI0LDI4LDRkMTdlYjEzLWRlYjctNDFhOC1hMWEyLTA1ODVlMmE4MGQwMzs="/>
-		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
-		<query language="SQL"><![CDATA[SELECT libro.titulo,
-	autor.nombre,
-	autor.apellido,
-	libro.`ISBN`,
-	libro.ventas
-FROM libro,
-	autor
-WHERE 
-	 libro.autor_id = autor.id]]></query>
-		<field name="titulo" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.name" value="titulo"/>
-			<property name="com.jaspersoft.studio.field.label" value="titulo"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="libro"/>
-		</field>
-		<field name="nombre" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.name" value="nombre"/>
-			<property name="com.jaspersoft.studio.field.label" value="nombre"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="autor"/>
-		</field>
-		<field name="apellido" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.name" value="apellido"/>
-			<property name="com.jaspersoft.studio.field.label" value="apellido"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="autor"/>
-		</field>
-		<field name="ISBN" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.name" value="ISBN"/>
-			<property name="com.jaspersoft.studio.field.label" value="ISBN"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="libro"/>
-		</field>
-		<field name="ventas" class="java.lang.Integer">
-			<property name="com.jaspersoft.studio.field.name" value="ventas"/>
-			<property name="com.jaspersoft.studio.field.label" value="ventas"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="libro"/>
-		</field>
-	</dataset>
-	<query language="SQL"><![CDATA[SELECT libro.titulo,
-	autor.nombre,
-	autor.apellido,
-	libro.`ISBN`,
-	libro.ventas
-FROM libro,
-	autor
-WHERE 
-	 libro.autor_id = autor.id]]></query>
-	<field name="titulo" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="titulo"/>
-		<property name="com.jaspersoft.studio.field.label" value="titulo"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="libro"/>
-	</field>
-	<field name="nombre" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
-		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="autor"/>
-	</field>
-	<field name="apellido" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="apellido"/>
-		<property name="com.jaspersoft.studio.field.label" value="apellido"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="autor"/>
-	</field>
-	<field name="ISBN" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="ISBN"/>
-		<property name="com.jaspersoft.studio.field.label" value="ISBN"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="libro"/>
-	</field>
-	<field name="ventas" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="ventas"/>
-		<property name="com.jaspersoft.studio.field.label" value="ventas"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="libro"/>
-	</field>
+<jasperReport name="Libros" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ad9ac0a6-65eb-4b23-9ba3-fc27574fccaa">
+	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="ISBN" class="java.lang.String"/>
+	<field name="titulo" class="java.lang.String"/>
+	<field name="ventas" class="java.lang.Integer"/>
+	<field name="autor" class="biblioteca.Autor"/>
 	<background splitType="Stretch"/>
-	<title height="79" splitType="Stretch">
-		<element kind="textField" uuid="543fbc4a-9fd3-4921-a240-9404465f7beb" x="-20" y="0" width="595" height="79" fontSize="37.0" textAdjust="ScaleFont" linkType="None" linkTarget="Self" blankWhenNull="false" hTextAlign="Center" vTextAlign="Middle">
-			<expression><![CDATA["Libros"]]></expression>
+	<title height="80" splitType="Stretch">
+		<element kind="staticText" uuid="3c2f69fa-9ed8-4891-bea4-1f3e80db7231" x="-20" y="0" width="595" height="80" fontSize="47.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Libros]]></text>
+		</element>
+		<element kind="image" uuid="2322b15c-0fbc-485d-b05c-a35fc47f6421" x="90" y="0" width="80" height="80" hImageAlign="Center" vImageAlign="Middle">
+			<expression><![CDATA[$P{RUTA_IMAGEN}]]></expression>
 		</element>
 	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch">
+		<element kind="staticText" uuid="dbb3e2eb-6121-4155-9e43-c429f9132d9b" x="53" y="30" width="100" height="30">
+			<text><![CDATA[ISBN]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fed97b25-0002-4def-bc34-c95a79feb5e3"/>
+		</element>
+		<element kind="staticText" uuid="725678a8-bcb5-437b-8109-d77e47d6888b" x="153" y="30" width="100" height="30">
+			<text><![CDATA[titulo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="613141b3-bcd3-472d-89dc-2dcdbb14d4d6"/>
+		</element>
+		<element kind="staticText" uuid="acc14800-d3de-41ac-bc82-1a7040539456" x="253" y="30" width="100" height="30">
+			<text><![CDATA[ventas]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffbc99fa-5edf-40ee-ad0d-bab14e7127fc"/>
+		</element>
+		<element kind="staticText" uuid="0218368e-7608-4beb-9750-28162a4e034c" x="353" y="30" width="100" height="30">
+			<text><![CDATA[autor]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bea193b3-714e-427d-888f-c27ef1877191"/>
+		</element>
+	</columnHeader>
 	<detail>
-		<band height="269" splitType="Stretch">
-			<element kind="component" uuid="5ab73c20-201f-4c5b-8f3c-ac4f9630a8e2" stretchType="ContainerHeight" x="2" y="5" width="550" height="259" printRepeatedValues="false">
-				<component kind="table" whenNoDataType="Blank">
-					<datasetRun uuid="c11a0d72-a5be-492c-975d-4625c6636a20" subDataset="Ordenacion">
-						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
-					</datasetRun>
-					<column kind="single" uuid="c1cb7039-b688-4003-ac11-e5b4406b8ccc" width="111">
-						<columnHeader height="30" style="Table 1_CH">
-							<element kind="staticText" uuid="01a05982-a4ff-43b4-b11a-e686e8141d01" x="0" y="0" width="111" height="30">
-								<text><![CDATA[titulo]]></text>
-							</element>
-						</columnHeader>
-						<detailCell height="30" style="Table 1_TD">
-							<element kind="textField" uuid="605d9d6d-87a6-41b2-af4a-db3b9f2e7976" x="0" y="0" width="111" height="30">
-								<expression><![CDATA[$F{titulo}]]></expression>
-							</element>
-						</detailCell>
-					</column>
-					<column kind="single" uuid="e78ed9ea-f3a9-4e7b-af70-4e8f0434c08e" width="111">
-						<columnHeader height="30" style="Table 1_CH">
-							<element kind="staticText" uuid="11e707fc-503e-46de-8849-e168071298d8" x="0" y="0" width="111" height="30">
-								<text><![CDATA[nombre]]></text>
-							</element>
-						</columnHeader>
-						<detailCell height="30" style="Table 1_TD">
-							<element kind="textField" uuid="29d06e1b-9ab8-4b27-8f58-70574bd6263b" x="0" y="0" width="111" height="30">
-								<expression><![CDATA[$F{nombre}]]></expression>
-							</element>
-						</detailCell>
-					</column>
-					<column kind="single" uuid="4919ea3c-b246-413c-b8ea-a58867a4d24f" width="110">
-						<columnHeader height="30" style="Table 1_CH">
-							<element kind="staticText" uuid="b7f41e86-4ee9-4774-ab72-3de6a9d1c9f7" x="0" y="0" width="110" height="30">
-								<text><![CDATA[apellido]]></text>
-							</element>
-						</columnHeader>
-						<detailCell height="30" style="Table 1_TD">
-							<element kind="textField" uuid="481f44b2-a78b-47c0-a9af-14314d4fea56" x="0" y="0" width="110" height="30">
-								<expression><![CDATA[$F{apellido}]]></expression>
-							</element>
-						</detailCell>
-					</column>
-					<column kind="single" uuid="3ac5b075-9f53-425b-9576-1a88b85e1ab2" width="109">
-						<columnHeader height="30" style="Table 1_CH">
-							<element kind="staticText" uuid="4202b5d2-c585-4750-96f9-78341a396a08" x="0" y="0" width="109" height="30">
-								<text><![CDATA[ISBN]]></text>
-							</element>
-						</columnHeader>
-						<detailCell height="30" style="Table 1_TD">
-							<element kind="textField" uuid="36c04cfa-48fa-4abc-8252-b128eeb254e5" x="0" y="0" width="109" height="30">
-								<expression><![CDATA[$F{ISBN}]]></expression>
-							</element>
-						</detailCell>
-					</column>
-					<column kind="single" uuid="8fce9638-6d51-4e99-9560-46f05ff4251b" width="109">
-						<columnHeader height="30" style="Table 1_CH">
-							<element kind="staticText" uuid="f15b1050-1afa-4847-ac82-cb9a2b3e171c" x="0" y="0" width="109" height="30">
-								<text><![CDATA[ventas]]></text>
-							</element>
-						</columnHeader>
-						<detailCell height="30" style="Table 1_TD">
-							<element kind="textField" uuid="7a726166-f94f-4e49-b2ba-8528f76d3f20" x="0" y="0" width="109" height="30">
-								<expression><![CDATA[$F{ventas}]]></expression>
-							</element>
-						</detailCell>
-					</column>
-				</component>
-				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
-				<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
-				<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
-				<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
-				<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
-				<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
-				<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+		<band height="45" splitType="Stretch">
+			<element kind="textField" uuid="38b86d0a-e6f8-4040-9d3e-4576c1e2bd50" x="53" y="0" width="100" height="30">
+				<expression><![CDATA[$F{ISBN}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fed97b25-0002-4def-bc34-c95a79feb5e3"/>
+			</element>
+			<element kind="textField" uuid="ec03fe5d-e50d-4cb6-95a9-881c140704d6" x="153" y="0" width="100" height="30">
+				<expression><![CDATA[$F{titulo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="613141b3-bcd3-472d-89dc-2dcdbb14d4d6"/>
+			</element>
+			<element kind="textField" uuid="92b8630c-b033-40d7-abb9-cc820a17dfb1" x="253" y="0" width="100" height="30">
+				<expression><![CDATA[$F{ventas}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffbc99fa-5edf-40ee-ad0d-bab14e7127fc"/>
+			</element>
+			<element kind="textField" uuid="f91db45b-5d57-4386-9a88-8c9a24ed1de4" x="353" y="0" width="100" height="30">
+				<expression><![CDATA[$F{autor}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bea193b3-714e-427d-888f-c27ef1877191"/>
 			</element>
 		</band>
 	</detail>
-	<pageFooter height="54" splitType="Stretch">
-		<element kind="textField" uuid="0ef578f0-d96b-46b7-a0c7-528e450a64f7" x="360" y="10" width="100" height="30" hTextAlign="Right">
-			<expression><![CDATA["Page " + $V{PAGE_NUMBER}]]></expression>
-		</element>
-		<element kind="textField" uuid="bb7c0b95-c993-4f1d-9908-6e7d6c44a968" x="460" y="10" width="100" height="30" evaluationTime="Report" hTextAlign="Left">
-			<expression><![CDATA[" of " + $V{PAGE_NUMBER}]]></expression>
-		</element>
-	</pageFooter>
+	<pageFooter height="63" splitType="Stretch"/>
+	<summary height="50"/>
 </jasperReport>
