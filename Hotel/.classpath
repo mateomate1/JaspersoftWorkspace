@@ -7,6 +7,5 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/Mateo/IdeaProjects/CreacionDeInformes/out/artifacts/Clases/Clases.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

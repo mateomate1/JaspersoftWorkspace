@@ -12,14 +12,9 @@
 	</style>
 	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
 	<query language="sql"><![CDATA[]]></query>
-	<field name="NHabitacion" class="java.lang.Integer"/>
-	<field name="precio" class="java.lang.Double"/>
-	<field name="NPersonas" class="java.lang.Integer"/>
-	<field name="NNoches" class="java.lang.Integer"/>
-	<field name="HuespedPrincipal" class="java.lang.String"/>
 	<background splitType="Stretch"/>
 	<title height="132" splitType="Stretch">
-		<element kind="image" uuid="97705585-a0b5-4ec7-86f3-ae10c220e6af" x="456" y="0" width="99" height="132">
+		<element kind="image" uuid="97705585-a0b5-4ec7-86f3-ae10c220e6af" x="456" y="0" width="99" height="132" hImageAlign="Center" vImageAlign="Middle">
 			<expression><![CDATA[$P{RUTA_IMAGEN}]]></expression>
 		</element>
 		<element kind="frame" uuid="6c6ca4e1-17cd-4913-93d6-5e670ea9ae8a" mode="Opaque" x="0" y="0" width="451" height="95" backcolor="#000000">
@@ -38,52 +33,17 @@
 	</title>
 	<pageHeader splitType="Stretch"/>
 	<columnHeader height="26" splitType="Stretch">
-		<element kind="staticText" uuid="074873fb-b589-4cfa-9087-4c929d8f818d" x="0" y="0" width="50" height="26" hTextAlign="Center">
-			<text><![CDATA[Habitacion]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef267a7b-7692-40e8-a073-5d8c9ddfb0d2"/>
+		<element kind="staticText" uuid="7b98a589-9261-4590-b953-041261323c7d" x="59" y="0" width="100" height="26">
+			<text><![CDATA[NHabitacion]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d79611ba-8312-49c5-bfb4-a5972365dc76"/>
 		</element>
-		<element kind="staticText" uuid="2f5ced71-e3f5-44f0-afbb-f8865fc799c6" x="50" y="0" width="50" height="26" hTextAlign="Center">
-			<text><![CDATA[Precio]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c0e9d441-1475-4334-ab6c-13eb22458c1b"/>
-		</element>
-		<element kind="staticText" uuid="14be61f3-4018-4f49-aa98-2a41c7d8af93" x="100" y="0" width="50" height="26" hTextAlign="Center">
-			<text><![CDATA[Numero de personas]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="97acb4fc-19b4-4a65-9fe8-39b5134bb49d"/>
-		</element>
-		<element kind="staticText" uuid="c167935e-e585-409a-afa9-44f5fa3a1ca9" x="150" y="0" width="48" height="26" hTextAlign="Center">
-			<text><![CDATA[Numero de noches]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc1af717-799b-47db-9cca-dabcd5c8ed3c"/>
-		</element>
-		<element kind="staticText" uuid="ec297f1d-f0ac-4254-a392-ed37ae54e904" x="199" y="0" width="100" height="26" hTextAlign="Center">
-			<text><![CDATA[Huesped principal]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="01534558-441e-4370-ad35-788895b4bf44"/>
+		<element kind="staticText" uuid="f571f2ba-57e0-4449-8bac-eec4ed43f20d" x="160" y="0" width="100" height="26">
+			<text><![CDATA[precio]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e3615bf-cecb-4e70-afc0-cff926a3fbf4"/>
 		</element>
 	</columnHeader>
 	<detail>
-		<band height="49" splitType="Stretch">
-			<element kind="frame" uuid="b50221b5-8254-440b-8c6f-1f0b138c9259" mode="Opaque" x="0" y="0" width="555" height="49" style="Row">
-				<element kind="textField" uuid="9c2a57b6-a6b2-40cc-9fb1-57acfced4a83" x="0" y="0" width="50" height="30">
-					<expression><![CDATA[$F{NHabitacion}]]></expression>
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef267a7b-7692-40e8-a073-5d8c9ddfb0d2"/>
-				</element>
-				<element kind="textField" uuid="722650db-6ec7-4e52-9083-efb3d2bf64fb" x="50" y="0" width="50" height="30">
-					<expression><![CDATA[$F{precio}]]></expression>
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c0e9d441-1475-4334-ab6c-13eb22458c1b"/>
-				</element>
-				<element kind="textField" uuid="578ad4e6-241b-4e53-84d8-2fb57f3e8133" x="100" y="0" width="50" height="30">
-					<expression><![CDATA[$F{NPersonas}]]></expression>
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="97acb4fc-19b4-4a65-9fe8-39b5134bb49d"/>
-				</element>
-				<element kind="textField" uuid="32efac09-f039-4794-9e87-0d9759a2c92a" x="150" y="0" width="48" height="30">
-					<expression><![CDATA[$F{NNoches}]]></expression>
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc1af717-799b-47db-9cca-dabcd5c8ed3c"/>
-				</element>
-				<element kind="textField" uuid="71e417c0-a910-4328-b186-f2db6a42e87e" x="199" y="0" width="100" height="30">
-					<expression><![CDATA[$F{HuespedPrincipal}]]></expression>
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="01534558-441e-4370-ad35-788895b4bf44"/>
-				</element>
-			</element>
-		</band>
+		<band height="55" splitType="Stretch"/>
 	</detail>
 	<columnFooter height="7" splitType="Stretch">
 		<element kind="line" uuid="1133a906-5b71-476e-9f3e-bc97c97058c1" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1">
