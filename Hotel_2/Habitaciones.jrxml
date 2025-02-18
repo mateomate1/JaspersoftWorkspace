@@ -1,0 +1,55 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Habitaciones" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9dd42345-2248-4adc-92cf-7392c6ffd12c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="nHabitacion" class="java.lang.Integer"/>
+	<field name="precio" class="java.lang.Double"/>
+	<field name="reserva" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="80" splitType="Stretch">
+		<element kind="image" uuid="78d698ba-c89a-4c8b-8958-cd6e5cca2dc2" x="380" y="0" width="99" height="79">
+			<expression><![CDATA[$P{RUTA_IMAGEN}]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="c625f4ae-6f09-4ac2-872f-b7c69b229e3e" x="0" y="0" width="290" height="50" fontSize="35.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Hotel Geranio]]></text>
+		</element>
+		<element kind="staticText" uuid="fef02b62-4ea3-4954-a677-3fdf2f0df1e6" x="0" y="50" width="180" height="30" vTextAlign="Middle">
+			<text><![CDATA[Reporte de habitaciones]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="31" splitType="Stretch">
+		<element kind="staticText" uuid="2375f4b9-99a0-49b8-84f4-bd437769ab48" x="0" y="0" width="100" height="30">
+			<text><![CDATA[nHabitacion]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c60eb6b1-af25-4e13-8f09-dca43e613426"/>
+		</element>
+		<element kind="staticText" uuid="b7e6b280-1579-492f-a125-e8f966a331f3" x="110" y="0" width="100" height="30">
+			<text><![CDATA[precio]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5bcd8cc3-3484-444f-a194-c2f670096771"/>
+		</element>
+		<element kind="staticText" uuid="b918c2b1-2f9a-4d59-97b4-15a42b037af6" x="220" y="0" width="100" height="30">
+			<text><![CDATA[reserva]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc48be7a-60f8-4497-b7f2-5ec5264169af"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<element kind="textField" uuid="d481f0d2-57b3-4ca8-922f-d0d4764d2445" x="0" y="10" width="100" height="30">
+				<expression><![CDATA[$F{nHabitacion}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c60eb6b1-af25-4e13-8f09-dca43e613426"/>
+			</element>
+			<element kind="textField" uuid="a2c4ed5a-7204-4ce9-ba88-dd220216461f" x="110" y="10" width="100" height="30">
+				<expression><![CDATA[$F{precio}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5bcd8cc3-3484-444f-a194-c2f670096771"/>
+			</element>
+			<element kind="textField" uuid="9e5f55c1-aafa-4033-9121-5bc44c8ea6ca" x="220" y="10" width="100" height="30">
+				<expression><![CDATA[$F{reserva}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc48be7a-60f8-4497-b7f2-5ec5264169af"/>
+			</element>
+		</band>
+	</detail>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

@@ -12,6 +12,8 @@
 	</style>
 	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
 	<query language="sql"><![CDATA[]]></query>
+	<field name="numero" class="Clases.Habitacion"/>
+	<field name="precio" class="Clases.Habitacion"/>
 	<background splitType="Stretch"/>
 	<title height="132" splitType="Stretch">
 		<element kind="image" uuid="97705585-a0b5-4ec7-86f3-ae10c220e6af" x="456" y="0" width="99" height="132" hImageAlign="Center" vImageAlign="Middle">
@@ -33,17 +35,26 @@
 	</title>
 	<pageHeader splitType="Stretch"/>
 	<columnHeader height="26" splitType="Stretch">
-		<element kind="staticText" uuid="7b98a589-9261-4590-b953-041261323c7d" x="59" y="0" width="100" height="26">
-			<text><![CDATA[NHabitacion]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d79611ba-8312-49c5-bfb4-a5972365dc76"/>
+		<element kind="staticText" uuid="6b8df034-0432-4428-a112-b7db9299a440" x="0" y="0" width="100" height="26">
+			<text><![CDATA[numero]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="831761a8-b56b-4a7f-86e0-c1f14e555ea9"/>
 		</element>
-		<element kind="staticText" uuid="f571f2ba-57e0-4449-8bac-eec4ed43f20d" x="160" y="0" width="100" height="26">
+		<element kind="staticText" uuid="1eb8630d-7e2c-486b-8feb-a98224a4ae60" x="100" y="0" width="100" height="26">
 			<text><![CDATA[precio]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e3615bf-cecb-4e70-afc0-cff926a3fbf4"/>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6d81b52-00a6-4f40-93b4-73d6276bb76e"/>
 		</element>
 	</columnHeader>
 	<detail>
-		<band height="55" splitType="Stretch"/>
+		<band height="55" splitType="Stretch">
+			<element kind="textField" uuid="f0965b5b-effa-460b-bbca-e4a7c9a432ed" x="0" y="0" width="100" height="30">
+				<expression><![CDATA[$F{numero}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="831761a8-b56b-4a7f-86e0-c1f14e555ea9"/>
+			</element>
+			<element kind="textField" uuid="d919316b-5254-43cd-a8d3-cf37f6aed077" x="100" y="0" width="100" height="30">
+				<expression><![CDATA[$F{precio}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6d81b52-00a6-4f40-93b4-73d6276bb76e"/>
+			</element>
+		</band>
 	</detail>
 	<columnFooter height="7" splitType="Stretch">
 		<element kind="line" uuid="1133a906-5b71-476e-9f3e-bc97c97058c1" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1">
