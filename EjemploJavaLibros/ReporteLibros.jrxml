@@ -1,0 +1,75 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="ReporteLibros" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="874f4e56-1e94-49f1-8972-95060ef05eda">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="ISBN" class="java.lang.String"/>
+	<field name="titulo" class="java.lang.String"/>
+	<field name="ventas" class="java.lang.Integer"/>
+	<field name="autor" class="app.Autor"/>
+	<variable name="nombre" incrementType="Report" class="java.lang.String">
+		<expression><![CDATA[$F{autor}.getNombre()]]></expression>
+	</variable>
+	<variable name="apellido" class="java.lang.String">
+		<expression><![CDATA[$F{autor}.getApellido()]]></expression>
+	</variable>
+	<background splitType="Stretch"/>
+	<title height="83" splitType="Stretch">
+		<element kind="staticText" uuid="c5082166-a870-4403-97db-afa589dae8e5" x="-20" y="0" width="595" height="79" fontSize="29.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Informe de libros]]></text>
+		</element>
+		<element kind="image" uuid="ad5b52fb-f43b-4026-90bd-36f924dc5d8b" x="480" y="0" width="80" height="79">
+			<expression><![CDATA[$P{RUTA_IMAGEN}]]></expression>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="31" splitType="Stretch">
+		<element kind="staticText" uuid="8e6442ca-3770-482f-acc8-ffb3ffafff1a" x="10" y="0" width="100" height="30">
+			<text><![CDATA[ISBN]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fe115be-a12e-4fe1-9283-f5b99cb85b6d"/>
+		</element>
+		<element kind="staticText" uuid="69fb8612-57bd-4a6c-97bf-e00fa2167d2f" x="120" y="0" width="100" height="30">
+			<text><![CDATA[titulo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8377b5f-e355-44b9-9e1d-8711c1f93215"/>
+		</element>
+		<element kind="staticText" uuid="c32532ac-a4a2-4bb1-92d0-ea736b4885fa" x="230" y="0" width="100" height="30">
+			<text><![CDATA[ventas]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3047e636-dc7b-4e38-982a-0cadaa902f96"/>
+		</element>
+		<element kind="staticText" uuid="a5cd2547-6e95-4586-900b-d14d42f7e731" x="340" y="0" width="100" height="30">
+			<text><![CDATA[Nombre del autor]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="55">
+			<element kind="textField" uuid="b554becf-43ef-4c25-afb1-0a38eeafec6a" x="10" y="0" width="100" height="30">
+				<expression><![CDATA[$F{ISBN}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fe115be-a12e-4fe1-9283-f5b99cb85b6d"/>
+			</element>
+			<element kind="textField" uuid="773b8455-73af-47ea-8996-a393a3595658" x="120" y="0" width="100" height="30">
+				<expression><![CDATA[$F{titulo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8377b5f-e355-44b9-9e1d-8711c1f93215"/>
+			</element>
+			<element kind="textField" uuid="526bc019-6943-4af1-a7c6-085d466ddb64" x="230" y="0" width="100" height="30">
+				<expression><![CDATA[$F{ventas}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3047e636-dc7b-4e38-982a-0cadaa902f96"/>
+			</element>
+			<element kind="textField" uuid="7f93ddd4-4f8f-478f-8641-fea1965960ff" x="340" y="0" width="100" height="30">
+				<expression><![CDATA[$V{nombre}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="textField" uuid="97983ede-7ce7-4faf-9af4-a4b0eda449da" x="0" y="0" width="100" height="30" pattern="MMMMM dd, yyyy">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="textField" uuid="5aac0ff2-a146-4bac-8cd3-82c34fb4abe7" x="370" y="0" width="100" height="30" hTextAlign="Right">
+			<expression><![CDATA["Page " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="3c3f1624-2a49-434c-ae87-e3ec0a393524" x="470" y="0" width="100" height="30" evaluationTime="Report" hTextAlign="Left">
+			<expression><![CDATA[" of " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

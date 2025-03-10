@@ -1,0 +1,87 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="64dd25ee-d214-4986-bf81-8e35fd61d891">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<query language="SQL"><![CDATA[SELECT * FROM vehiculos]]></query>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehiculos"/>
+	</field>
+	<field name="matricula" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="matricula"/>
+		<property name="com.jaspersoft.studio.field.label" value="matricula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehiculos"/>
+	</field>
+	<field name="modelo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="modelo"/>
+		<property name="com.jaspersoft.studio.field.label" value="modelo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehiculos"/>
+	</field>
+	<field name="color" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="color"/>
+		<property name="com.jaspersoft.studio.field.label" value="color"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehiculos"/>
+	</field>
+	<group name="id">
+		<expression><![CDATA[$F{id}]]></expression>
+	</group>
+	<group name="matricula">
+		<expression><![CDATA[$F{matricula}]]></expression>
+	</group>
+	<group name="modelo">
+		<expression><![CDATA[$F{modelo}]]></expression>
+	</group>
+	<group name="color">
+		<expression><![CDATA[$F{color}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="39" splitType="Stretch">
+		<element kind="staticText" uuid="59236350-16cb-473d-bb13-70841d70449b" x="0" y="0" width="100" height="30">
+			<text><![CDATA[id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="890f1412-4db0-4f19-b770-57e2a888b9fa"/>
+		</element>
+		<element kind="staticText" uuid="7e481d88-1669-46e0-884e-532d0a5f47bf" x="110" y="0" width="100" height="30">
+			<text><![CDATA[matricula]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e5fccf5-b8b0-414f-b280-1bc6f2a0e39e"/>
+		</element>
+		<element kind="staticText" uuid="869fddb6-4c42-4d56-bb24-e468ae395ad1" x="220" y="0" width="100" height="30">
+			<text><![CDATA[modelo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d16701f6-6b95-4055-a0f4-92678f49ae9a"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<element kind="textField" uuid="215ab58e-9a4b-43a6-9ef1-c945511a0faa" x="0" y="10" width="100" height="30">
+				<expression><![CDATA[$F{id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="890f1412-4db0-4f19-b770-57e2a888b9fa"/>
+			</element>
+			<element kind="textField" uuid="73568aee-a49e-44ed-980d-c6dc6fb7c960" x="110" y="10" width="100" height="30">
+				<expression><![CDATA[$F{matricula}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e5fccf5-b8b0-414f-b280-1bc6f2a0e39e"/>
+			</element>
+			<element kind="textField" uuid="d0f4de25-429a-4fc6-b5c9-b671a1b6fe47" x="220" y="10" width="100" height="30">
+				<expression><![CDATA[$F{modelo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d16701f6-6b95-4055-a0f4-92678f49ae9a"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="224" splitType="Stretch">
+		<element kind="chart" chartType="pie" uuid="69e28a1e-cc94-4b15-8233-73f9a0e13721" x="187" y="24" width="200" height="200" evaluationTime="Report">
+			<dataset kind="pie" incrementType="Group" incrementGroup="modelo">
+				<incrementWhenExpression><![CDATA[$F{modelo}]]></incrementWhenExpression>
+				<series>
+					<keyExpression><![CDATA[$F{id}]]></keyExpression>
+					<valueExpression><![CDATA[0]]></valueExpression>
+				</series>
+			</dataset>
+			<plot>
+				<itemLabel/>
+			</plot>
+		</element>
+	</summary>
+</jasperReport>
