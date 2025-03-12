@@ -1,0 +1,94 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="ExamenPizzasSQL" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0b813c6a-8730-4494-8321-b387e4190765">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<query language="SQL"><![CDATA[SELECT * FROM pizza]]></query>
+	<field name="cod_pizza" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cod_pizza"/>
+		<property name="com.jaspersoft.studio.field.label" value="cod_pizza"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pizza"/>
+	</field>
+	<field name="nombre_pizza" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_pizza"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_pizza"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pizza"/>
+	</field>
+	<field name="precio" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="precio"/>
+		<property name="com.jaspersoft.studio.field.label" value="precio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pizza"/>
+	</field>
+	<variable name="PizzaTotal" incrementType="Report" class="java.lang.Integer"/>
+	<group name="cod_pizza">
+		<expression><![CDATA[$F{cod_pizza}]]></expression>
+	</group>
+	<group name="nombre_pizza">
+		<expression><![CDATA[$F{nombre_pizza}]]></expression>
+	</group>
+	<group name="precio">
+		<expression><![CDATA[$F{precio}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="87" splitType="Stretch">
+		<element kind="staticText" uuid="d3c9e3e8-3df5-49f6-a66a-a67d1ce7323f" x="-20" y="0" width="520" height="78" fontSize="33.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Mateo Ayarra - Informe sobre paises]]></text>
+		</element>
+		<element kind="image" uuid="5c9fe056-272f-4428-afdc-55b6a2a99911" x="470" y="0" width="90" height="87">
+			<expression><![CDATA["pizza.png"]]></expression>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="31" splitType="Stretch">
+		<element kind="staticText" uuid="b3f123a7-6eb3-4100-8e49-beb80f7b3dc8" x="0" y="0" width="100" height="30">
+			<text><![CDATA[cod_pizza]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="398c94bf-5549-4317-b998-d858f279f991"/>
+		</element>
+		<element kind="staticText" uuid="81c891db-f7fc-40b1-8531-50fc925a30d5" x="110" y="0" width="100" height="30">
+			<text><![CDATA[nombre_pizza]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4ee2132-e80e-4c7e-b709-d1d56581218d"/>
+		</element>
+		<element kind="staticText" uuid="5d24cb37-b1ab-44ff-a040-9d70e137eb63" x="220" y="0" width="100" height="30">
+			<text><![CDATA[precio]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96ca19d9-a245-4ee6-bf27-d4e6bc716f2b"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<element kind="textField" uuid="c717ecfd-1829-44ff-88e9-7563f90a5c3f" x="0" y="10" width="100" height="30">
+				<expression><![CDATA[$F{cod_pizza}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="398c94bf-5549-4317-b998-d858f279f991"/>
+			</element>
+			<element kind="textField" uuid="59febbf9-7356-4a70-b239-c849bcbce709" x="110" y="10" width="100" height="30">
+				<expression><![CDATA[$F{nombre_pizza}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4ee2132-e80e-4c7e-b709-d1d56581218d"/>
+			</element>
+			<element kind="textField" uuid="2670a19e-b58d-4168-9036-8fb42de6293e" x="220" y="10" width="100" height="30">
+				<expression><![CDATA[$F{precio}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96ca19d9-a245-4ee6-bf27-d4e6bc716f2b"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="207" splitType="Stretch">
+		<element kind="chart" chartType="pie3D" uuid="fcf5754c-aa27-4c2e-b1a5-7e33c5e69771" x="160" y="0" width="200" height="200" evaluationTime="Report">
+			<dataset kind="pie">
+				<series>
+					<keyExpression><![CDATA[$F{nombre_pizza}]]></keyExpression>
+					<valueExpression><![CDATA[$F{precio}]]></valueExpression>
+					<labelExpression><![CDATA[$F{nombre_pizza}]]></labelExpression>
+				</series>
+			</dataset>
+			<plot>
+				<itemLabel/>
+			</plot>
+		</element>
+	</columnFooter>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="220" splitType="Stretch">
+		<element kind="staticText" uuid="dec1ad24-0ff2-4345-9c36-2b530d31bb50" x="110" y="0" width="100" height="30">
+			<text><![CDATA[Numero de pizzas existentes:]]></text>
+		</element>
+		<element kind="textField" uuid="410fd130-6060-400d-89f3-dde6c606923f" x="220" y="0" width="100" height="30">
+			<expression><![CDATA[$V{REPORT_COUNT}]]></expression>
+		</element>
+	</summary>
+</jasperReport>

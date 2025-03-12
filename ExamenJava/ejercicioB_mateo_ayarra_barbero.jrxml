@@ -1,0 +1,127 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="ejercicioB_mateo_ayarra_barbero" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3ca9a09f-f113-4a39-a3a1-c8d591488d4e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="RUTA_IMAGEN" class="java.lang.String"/>
+	<parameter name="media_d1" class="java.lang.Double"/>
+	<parameter name="media_d2" class="java.lang.Double"/>
+	<parameter name="media_d3" class="java.lang.Double"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="ID" class="java.lang.Integer"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="cargo" class="java.lang.String"/>
+	<field name="salario" class="java.lang.Double"/>
+	<field name="fContratacion" class="java.time.LocalDate"/>
+	<field name="departamento" class="app.Departamento"/>
+	<variable name="Salario medio" incrementType="Report" calculation="Average" class="java.lang.Double">
+		<expression><![CDATA[$F{salario}]]></expression>
+	</variable>
+	<variable name="nombreDepartamento" class="java.lang.String">
+		<expression><![CDATA[$F{departamento}.getNombre()]]></expression>
+	</variable>
+	<variable name="descripcion" class="java.lang.String">
+		<expression><![CDATA[$F{departamento}.getDescripcion()]]></expression>
+	</variable>
+	<variable name="salarioMedio" calculation="Average" class="java.lang.String">
+		<expression><![CDATA[$F{departamento}]]></expression>
+	</variable>
+	<background splitType="Stretch"/>
+	<title height="81" splitType="Stretch">
+		<element kind="staticText" uuid="cacf6ebe-a575-4b41-bf0f-eb269869199e" x="-20" y="0" width="500" height="79" fontSize="19.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Mateo Ayarra - Listado de Empleados]]></text>
+		</element>
+		<element kind="image" uuid="0d9b67e6-f208-4e2b-a21c-0cd58b5062f2" x="480" y="0" width="80" height="79">
+			<expression><![CDATA[$P{RUTA_IMAGEN}]]></expression>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="17" splitType="Stretch">
+		<element kind="staticText" uuid="7f3b49b3-aa16-40ab-998f-634ee673dd88" x="0" y="0" width="81" height="17">
+			<text><![CDATA[ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2ff2c882-fb2b-4f8b-b032-c0eeb5b6a8b0"/>
+		</element>
+		<element kind="staticText" uuid="3071edb6-9519-4ebf-9c0f-8d877c7a48dc" x="81" y="0" width="79" height="17">
+			<text><![CDATA[nombre]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38f0700a-8f07-486e-b96e-1a32e4a69d8d"/>
+		</element>
+		<element kind="staticText" uuid="a1a69f5b-8ddd-4318-970d-8fae0111cd5f" x="160" y="0" width="79" height="17">
+			<text><![CDATA[cargo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edccb0e8-ad15-4c1d-96c3-5f6cebc45b80"/>
+		</element>
+		<element kind="staticText" uuid="44d0a671-467b-4dec-abd9-3ebdfb666d81" x="239" y="0" width="79" height="17">
+			<text><![CDATA[salario]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4cc35ef1-ce05-474b-a231-feead36838b7"/>
+		</element>
+		<element kind="staticText" uuid="7406e888-b8f9-439e-a4f9-3afe4e5ee3fa" x="318" y="0" width="79" height="17">
+			<text><![CDATA[fContratacion]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a25b78b1-0f95-4e89-a377-e25c705846d8"/>
+		</element>
+		<element kind="staticText" uuid="1a1f570a-c16c-4301-892d-83f70e7ce917" x="397" y="0" width="79" height="17">
+			<text><![CDATA[Departamento]]></text>
+		</element>
+		<element kind="staticText" uuid="8f621e90-98b1-46c6-8fc8-015d69fd6c56" x="476" y="0" width="79" height="17">
+			<text><![CDATA[Descripcion]]></text>
+		</element>
+		<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<element kind="textField" uuid="b2856104-07ec-453f-a645-651f2c1827c3" x="0" y="0" width="81" height="32">
+				<expression><![CDATA[$F{ID}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2ff2c882-fb2b-4f8b-b032-c0eeb5b6a8b0"/>
+			</element>
+			<element kind="textField" uuid="75090765-8ce8-4380-bba7-69672fe5c12f" x="81" y="0" width="79" height="32">
+				<expression><![CDATA[$F{nombre}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38f0700a-8f07-486e-b96e-1a32e4a69d8d"/>
+			</element>
+			<element kind="textField" uuid="f25d3bc4-acc2-4573-ade1-4aae73f7f752" x="160" y="0" width="79" height="32">
+				<expression><![CDATA[$F{cargo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edccb0e8-ad15-4c1d-96c3-5f6cebc45b80"/>
+			</element>
+			<element kind="textField" uuid="e674a34b-4f1b-4813-888f-bf37e4cf7f71" x="239" y="0" width="79" height="32">
+				<expression><![CDATA[$F{salario}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4cc35ef1-ce05-474b-a231-feead36838b7"/>
+			</element>
+			<element kind="textField" uuid="bf92aba3-54e2-4735-a739-541999d0863d" x="318" y="0" width="79" height="32">
+				<expression><![CDATA[$F{fContratacion}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a25b78b1-0f95-4e89-a377-e25c705846d8"/>
+			</element>
+			<element kind="textField" uuid="fefa53df-22c5-432e-800c-ea98d680d55e" x="397" y="0" width="79" height="32">
+				<expression><![CDATA[$V{nombreDepartamento}]]></expression>
+			</element>
+			<element kind="textField" uuid="62583d1b-b07a-4b6b-ad66-cff8778cbf87" x="476" y="0" width="79" height="32">
+				<expression><![CDATA[$V{descripcion}]]></expression>
+			</element>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+		</band>
+	</detail>
+	<columnFooter height="91" splitType="Stretch"/>
+	<pageFooter height="32" splitType="Stretch">
+		<element kind="textField" uuid="128ae7a6-8741-4616-a96d-5e2c3bf79533" x="0" y="0" width="100" height="30" pattern="MMMMM dd, yyyy">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="textField" uuid="bf166551-4a64-497d-9503-f0feebd8d2a0" x="455" y="0" width="100" height="30" evaluationTime="Report" hTextAlign="Left">
+			<expression><![CDATA["Page " + $V{PAGE_NUMBER}+" of " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+	</pageFooter>
+	<summary height="93" splitType="Stretch">
+		<element kind="textField" uuid="71c4b6f1-df7e-4e0c-b33d-1480e1746270" x="455" y="0" width="100" height="30">
+			<expression><![CDATA[$P{media_d1}]]></expression>
+		</element>
+		<element kind="textField" uuid="a09b5617-3781-4c72-9079-454e666baa43" x="455" y="30" width="100" height="30">
+			<expression><![CDATA[$P{media_d2}]]></expression>
+		</element>
+		<element kind="textField" uuid="c880da34-1172-439c-8e72-fe97a3450b17" x="455" y="60" width="100" height="30">
+			<expression><![CDATA[$P{media_d3}]]></expression>
+		</element>
+		<element kind="staticText" uuid="aed3bd66-7fee-4b7a-9904-053a690928d3" x="380" y="0" width="75" height="30">
+			<text><![CDATA[Departamento de ventas:]]></text>
+		</element>
+		<element kind="staticText" uuid="fd4d2e83-301d-40ed-8896-eaba1a42b789" x="380" y="30" width="75" height="30">
+			<text><![CDATA[Departamento de marketing]]></text>
+		</element>
+		<element kind="staticText" uuid="da3312e0-3bfb-4159-8f41-d2bfdaccad04" x="380" y="60" width="75" height="30">
+			<text><![CDATA[Departamento de I+D+D]]></text>
+		</element>
+	</summary>
+</jasperReport>
