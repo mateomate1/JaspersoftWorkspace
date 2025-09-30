@@ -6,8 +6,8 @@ com.jaspersoft.studio.theme.ui.dark=pageBackground\=0,0,0\ncontainerMarginColor\
 com.jaspersoft.studio.theme.ui.light=pageBackground\=255,255,255\ncontainerMarginColor\=170,168,255\ngridColor\=192,192,192\nelementDesignBorderColor\=0,0,0\npageMarginColor\=170,168,255\n
 defaultValues=<defaultReports></defaultReports>
 eclipse.preferences.version=1
-jssbranding_product_mainbundle=com.jaspersoft.studio.rcp
-jssbranding_product_name=Jaspersoft Studio Community Edition
+jssbranding_product_mainbundle=com.jaspersoft.studio
+jssbranding_product_name=Jaspersoft Studio plug-in
 jssbranding_product_version=7.0.1.final
 net.sf.jasperreports.JRPROPERTIES=net.sf.jasperreports.compiler.temp.dir\=C\\\:\\\\Program Files\\\\Jaspersoft\\\\Jaspersoft Studio-7.0.1\nnet.sf.jasperreports.chrome.enabled\=true\nnet.sf.jasperreports.compiler.classpath\=C\\\:\\\\Program Files\\\\Jaspersoft\\\\Jaspersoft Studio-7.0.1\\\\\\\\plugins/org.eclipse.equinox.launcher_1.6.800.v20240513-1750.jar\nnet.sf.jasperreports.chrome.page.isolate\=true\nnet.sf.jasperreports.chrome.argument.remote-allow-origins\=*\n
 net.sf.jasperreports.chrome.argument.remote-allow-origins=*
